@@ -29,4 +29,3 @@ def index():
 def get_books():
     
     return {"books": "books data"}
-
