@@ -9,7 +9,6 @@ This program finds any number that can be multpied by 4 and be reversed ie:2178*
 
 
 def reverseFinder(x):
-    
     rev = str(x)[::-1]
     prod = x*4
     if str(prod) == rev:
@@ -17,4 +16,6 @@ def reverseFinder(x):
     else: 
         return False
     
-print(reverseFinder(2171))
+for i in range(1000,10000):
+    if reverseFinder(i):
+        print(i)
